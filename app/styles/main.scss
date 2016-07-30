@@ -1,0 +1,380 @@
+$icon-font-path: '../fonts/';
+@import url(https://fonts.googleapis.com/css?family=Karla);
+$minitablet: "(min-width: 512px) and (max-width: 767px)";
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$desktop: "(min-width: 1024px)";
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+
+
+.principal{
+  // background-image: url(../images/fondo_principal.jpg) ;
+  background-position: center center;
+
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+
+  background-size: cover;
+
+  background-color: #464646;
+  img{
+    width: 100%;
+    opacity: 0.3;
+  }
+  .texto_principal{
+    color: white;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    margin: 2% auto;
+    width: 100%;
+    padding: 0 10%;
+    // height: 100%;
+    .logotipo{
+      width: 200px;
+      opacity: 1;
+      display: none;
+    }
+
+    h1{
+      font-size: 1.5em;
+      text-align: center;
+      font-family: 'Karla', sans-serif;
+    }
+    p{
+      font-size: 1em;
+      text-align: center;
+      float: left;
+      position:relative;
+      font-family: 'Karla', sans-serif;
+      span{
+        position:absolute;
+        width: 0;
+        right: 0;
+        border-left: 1px solid #000;
+        animation : maquina 5s infinite alternate; 
+      }
+    }
+  }
+  @media #{$desktop}{
+      .texto_principal{
+        color: white;
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        margin: 10% auto;
+        width: 100%;
+        padding: 0 20%;
+        // height: 100%;
+        text-align: center;
+        .logotipo{
+          width: 200px;
+          opacity: 1;
+          display: inline-block;
+        }
+        h1{
+          font-size: 3.5em;
+          text-align: center;
+          font-family: 'Karla', sans-serif;
+        }
+        p{
+          font-size: 2em;
+          text-align: center;
+          position:relative;
+          font-family: 'Karla', sans-serif;
+      }
+
+    }
+
+  }
+}
+/* Custom page header */
+// .container{
+  
+//   width: 100%;
+//   height: 100%;
+//   padding: 0;
+//   margin: 0;
+  
+// }
+// Estilos de la Cabezera
+.cabezera{
+
+  .logotipo{
+    
+    padding: 0 !important;
+    margin: 0;
+    z-index: 1;
+    .logo{
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      width: 49%;
+      float: left;
+      img{
+        height: 100px;
+        width: 100px;
+        padding-left:5%;
+      }
+    }
+    .redes-sociales{
+      display:inline-block; 
+      color: white;
+      margin: 0;
+      padding: 0;
+      width: 49%;
+      position:relative;
+      float: right;
+      li{
+        list-style: none;
+        float: left;
+        img{
+          width: 3.5em;
+          display: inline-block;
+          padding: 8px;
+          vertical-align: center;
+          &:hover{
+            cursor: pointer;
+            -webkit-animation: rubberBand 1s;
+            animation: rubberBand 1s;
+          }
+        }
+      }
+      
+    }
+
+    @media #{$desktop}{
+      .redes-sociales{
+        display:inline-block; 
+        color: white;
+        margin: 0;
+        padding: 0;
+        position:relative;
+        float: right;
+          li{
+            list-style: none;
+            float: right;
+                    margin: 20px 5px;
+                    img{
+                      width: 3.5em;
+                      display: inline-block;
+                      padding: 8px;
+                      vertical-align: center;
+                      &:hover{
+                        cursor: pointer;
+                        -webkit-animation: rubberBand 1s;
+                        animation: rubberBand 1s;
+              }
+            }
+          }
+        }
+      }
+
+  }
+  .navbar{
+    margin: 0;
+  }
+}
+  
+.home{
+  background: #D8E1E8;
+  height: auto;
+  font-family: "Helvetica";
+  width: 100%;
+  margin-bottom: 50px;
+  .home-texto{
+      
+      width: 100%;
+      text-align: center;
+      p{
+        padding: 15px 10px;
+        font-family: 'Karla', sans-serif;
+        margin: 15px 10px 40px 10px;
+      }
+  }
+  .home-imagen{
+    figure{
+      width: 100%;
+      height: 100%;
+      margin: 45% auto;
+      img{
+        margin: 0 auto;
+        width: 100%;
+      }
+    }
+  }
+    .contenido{
+      width: 100%;
+      margin:0 0 10px 0;
+      padding:0;
+      .combo{
+        width: 100%;
+        height: 250px;
+        padding:0;
+        margin:0px;
+        display: block;
+        background: #5F7187;
+        .contenido-combo{
+          
+          height: 200px;
+          margin-top: 50px;
+          display: block;
+          padding: 15px;
+          text-align: center;
+          color: white;
+          i{
+            font-size: 6em;
+          }
+        }
+      }
+    }
+  @media #{$minitablet}{
+    .home-texto{
+        p{
+          font-size: 2em;
+          font-family: 'Karla', sans-serif;
+        }
+    }
+    .home-imagen{
+      figure{
+        width: 100%;
+        height: 100%;
+        
+        img{
+          margin: 0 auto;
+          width: 100%;
+        }
+      }
+    }
+    .contenido{
+      width: 100%;
+      margin:0 0 10px 0;
+      padding:0;
+      .combo{
+        // width: 100%;
+        height: 300px;
+        padding:0;
+        margin:0px;
+        display: inline-block;
+        background: #5F7187;
+        .contenido-combo{
+          
+          height: 200px;
+          margin-top: 50px;
+          display: block;
+          padding: 15px;
+          text-align: center;
+          color: white;
+          i{
+            font-size: 6em;
+          }
+        }
+      }
+    }
+  }
+
+  @media #{$desktop}{
+
+    .home-texto{
+        width: 100%;
+        margin: 20px 10px 15px 10px;
+        p{
+          font-size: 1.5em;
+          font-family: 'Karla', sans-serif;
+          padding:20px;
+        }
+    }
+    .home-imagen{
+      figure{
+        width: 100%;
+        height: 100%;
+        
+        img{
+          margin: 0 auto;
+          width: 100%;
+        }
+      }
+    }
+        .contenido{
+      // width: 100%;
+      margin:0 0 10px 0;
+      padding:0;
+      .combo{
+        width: 25%;
+        height: 300px;
+        padding:0;
+        margin:0px;
+        display: inline-block;
+        background: #5F7187;
+        .contenido-combo{
+          
+          height: 200px;
+          margin-top: 50px;
+          display: block;
+          padding: 15px;
+          text-align: center;
+          color: white;
+          i{
+            font-size: 6em;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.contenedor{
+  width: 100%;
+  min-height: 100%;
+  height: auto !important;
+  position: fixed;
+  top:0; 
+  left:0;
+  background: #000;
+.loader {
+  width: 100px;
+  height: 101px;
+  border: 8px solid;
+  border-top-color: hsl(154,100%,31%);
+  border-left-color: hsl(216,87%,52%);
+  border-bottom-color: hsl(8,66%,50%);
+  border-right-color: hsl(42,100%,51%);
+  border-radius: 50%;
+  transform: rotate(45deg);
+  margin: 30px auto;
+}
+p {
+  display: inline-block;
+  width: 107px;
+  height: 107px;
+  /* The background is used to specify the border background */
+  background: linear-gradient(90deg, hsla(212,67%,36%,0) 0%,
+                                         hsla(207,69%,51%,0) 76%,
+                                         hsla(0,0%,100%,1) 85%,
+                                         hsla(0,0%,100%,1) 100%); /* W3C */
+  /* Background origin is the padding box by default.
+  Override to make the background cover the border as well. */
+  -moz-background-origin: border;
+  background-origin: border-box;
+  /* A transparent border determines the width */
+  border: 6px solid transparent;
+  border-radius: 50%;
+  box-shadow: inset -999px 0 0 #fff; /* The background color */
+  transform: translate(-8px, 55px);
+  animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+    0% { transform: translate(-9px, -25px) rotate(0deg); }
+  100% { transform: translate(-9px, -25px) rotate(360deg); }
+}
+
+
+
+}
+
