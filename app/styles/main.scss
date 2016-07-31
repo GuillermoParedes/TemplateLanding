@@ -1,5 +1,6 @@
 $icon-font-path: '../fonts/';
 @import url(https://fonts.googleapis.com/css?family=Karla);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,900);
 $minitablet: "(min-width: 512px) and (max-width: 767px)";
 $tablet: "(min-width: 768px) and (max-width: 1023px)";
 $desktop: "(min-width: 1024px)";
@@ -7,8 +8,26 @@ $desktop: "(min-width: 1024px)";
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+.texto-center{
+  text-align: center;
+}
+h1{
 
-
+  font-family: 'Raleway',sans-serif;
+  font-size: 62px;
+  font-weight: bold;
+  line-height: 72px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 50px !important;
+}
+p {
+  font-family: 'Raleway',sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  margin: 0 0 24px;
+}
 .principal{
   // background-image: url(../images/fondo_principal.jpg) ;
   background-position: center center;
@@ -42,20 +61,20 @@ $desktop: "(min-width: 1024px)";
     h1{
       font-size: 1.5em;
       text-align: center;
-      font-family: 'Karla', sans-serif;
+      //font-family: 'Karla', sans-serif;
     }
     p{
       font-size: 1em;
       text-align: center;
       float: left;
       position:relative;
-      font-family: 'Karla', sans-serif;
+      //font-family: 'Karla', sans-serif;
       span{
         position:absolute;
         width: 0;
         right: 0;
         border-left: 1px solid #000;
-        animation : maquina 5s infinite alternate; 
+        animation : maquina 5s infinite alternate;
       }
     }
   }
@@ -78,13 +97,13 @@ $desktop: "(min-width: 1024px)";
         h1{
           font-size: 3.5em;
           text-align: center;
-          font-family: 'Karla', sans-serif;
+          //font-family: 'Karla', sans-serif;
         }
         p{
           font-size: 2em;
           text-align: center;
           position:relative;
-          font-family: 'Karla', sans-serif;
+          //font-family: 'Karla', sans-serif;
       }
 
     }
@@ -93,18 +112,18 @@ $desktop: "(min-width: 1024px)";
 }
 /* Custom page header */
 // .container{
-  
+
 //   width: 100%;
 //   height: 100%;
 //   padding: 0;
 //   margin: 0;
-  
+
 // }
 // Estilos de la Cabezera
 .cabezera{
 
   .logotipo{
-    
+
     padding: 0 !important;
     margin: 0;
     z-index: 1;
@@ -122,7 +141,7 @@ $desktop: "(min-width: 1024px)";
       }
     }
     .redes-sociales{
-      display:inline-block; 
+      display:inline-block;
       color: white;
       margin: 0;
       padding: 0;
@@ -144,12 +163,12 @@ $desktop: "(min-width: 1024px)";
           }
         }
       }
-      
+
     }
 
     @media #{$desktop}{
       .redes-sociales{
-        display:inline-block; 
+        display:inline-block;
         color: white;
         margin: 0;
         padding: 0;
@@ -179,21 +198,20 @@ $desktop: "(min-width: 1024px)";
     margin: 0;
   }
 }
-  
+
 .home{
   background: #D8E1E8;
   height: auto;
-  font-family: "Helvetica";
+  //font-family: "Helvetica";
   width: 100%;
-  margin-bottom: 50px;
   .home-texto{
-      
+    color: #222222;
       width: 100%;
       text-align: center;
       p{
-        padding: 15px 10px;
-        font-family: 'Karla', sans-serif;
-        margin: 15px 10px 40px 10px;
+        padding: 5px 10px;
+        //font-family: 'Karla', sans-serif;
+        margin: 0px 10px 20px 10px;
       }
   }
   .home-imagen{
@@ -219,7 +237,7 @@ $desktop: "(min-width: 1024px)";
         display: block;
         background: #5F7187;
         .contenido-combo{
-          
+
           height: 200px;
           margin-top: 50px;
           display: block;
@@ -236,14 +254,14 @@ $desktop: "(min-width: 1024px)";
     .home-texto{
         p{
           font-size: 2em;
-          font-family: 'Karla', sans-serif;
+          //font-family: 'Karla', sans-serif;
         }
     }
     .home-imagen{
       figure{
         width: 100%;
         height: 100%;
-        
+
         img{
           margin: 0 auto;
           width: 100%;
@@ -252,7 +270,7 @@ $desktop: "(min-width: 1024px)";
     }
     .contenido{
       width: 100%;
-      margin:0 0 10px 0;
+      margin:0;
       padding:0;
       .combo{
         // width: 100%;
@@ -262,7 +280,7 @@ $desktop: "(min-width: 1024px)";
         display: inline-block;
         background: #5F7187;
         .contenido-combo{
-          
+
           height: 200px;
           margin-top: 50px;
           display: block;
@@ -284,7 +302,7 @@ $desktop: "(min-width: 1024px)";
         margin: 20px 10px 15px 10px;
         p{
           font-size: 1.5em;
-          font-family: 'Karla', sans-serif;
+          //font-family: 'Karla', sans-serif;
           padding:20px;
         }
     }
@@ -292,7 +310,7 @@ $desktop: "(min-width: 1024px)";
       figure{
         width: 100%;
         height: 100%;
-        
+
         img{
           margin: 0 auto;
           width: 100%;
@@ -301,7 +319,7 @@ $desktop: "(min-width: 1024px)";
     }
         .contenido{
       // width: 100%;
-      margin:0 0 10px 0;
+      margin:0;
       padding:0;
       .combo{
         width: 25%;
@@ -311,7 +329,7 @@ $desktop: "(min-width: 1024px)";
         display: inline-block;
         background: #5F7187;
         .contenido-combo{
-          
+
           height: 200px;
           margin-top: 50px;
           display: block;
@@ -328,12 +346,164 @@ $desktop: "(min-width: 1024px)";
 
 }
 
+
+.skills{
+  background: #D8E1E8;
+  padding: 0;
+  margin: 0;
+  .titulo-skills{
+    margin-top: 0 !important;
+    position: relative;
+    top: 50px;
+  }
+  .contenido-skills{
+    margin: 9% auto;
+    width: 80%;
+    height: auto;
+    .skills-diagram {
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      max-width: 35em;
+      margin: 2em auto 2em;
+    }
+    .skills-diagram > dd {
+      /* Hide inner attributes */
+      display: none;
+    }
+    .skills-diagram dt {
+      display: inline-block;
+      vertical-align: top;
+
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 50%;
+
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+
+      /* set defaults to skill-2 */
+      width: 2em;
+      height: 2em;
+      line-height: 2em;
+    }
+
+    .skills-diagram dt:hover {
+      -webkit-transform: scale(1.3);
+      -moz-transform: scale(1.3);
+      -o-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+      transform: scale(1.3);
+    }
+
+    /* Support vertical mode */
+    .skills-diagram-vertical dt {
+      display: block;
+      /* .25em is an equivalent to inline-block's horizontal whitespace margin */
+      margin: .25em auto;
+    }
+
+    /* Provide 10 different sizes */
+    .skills-diagram .skill-2 {
+      width: 2em;
+      height: 2em;
+      line-height: 2em;
+
+      background-color: rgba(201, 155, 129, .3);
+      border-color: rgba(201, 155, 129, 1);
+      color: rgba(201, 155, 129, 1);
+    }
+    .skills-diagram .skill-3 {
+      vertical-align: middle;
+
+      width: 3em;
+      height: 3em;
+      line-height: 3em;
+      background-color: rgba(138, 138, 140, .3);
+      border-color: rgba(138, 138, 140, 1);
+      color: rgba(138, 138, 140, 1);
+    }
+    .skills-diagram .skill-4 {
+      width: 4em;
+      height: 4em;
+      line-height: 4em;
+
+      background-color: rgba(234, 112, 97, .3);
+      border-color: rgba(234, 112, 97, 1);
+      color: rgba(234, 112, 97, 1);
+    }
+    .skills-diagram .skill-5 {
+      vertical-align: bottom;
+
+      width: 5em;
+      height: 5em;
+      line-height: 5em;
+      background-color: rgba(109, 182, 173, .3);
+      border-color: rgba(109, 182, 173, 1);
+      color: rgba(109, 182, 173, 1);
+    }
+    .skills-diagram .skill-6 {
+      vertical-align: top;
+
+      width: 6em;
+      height: 6em;
+      line-height: 6em;
+
+      background-color: rgba(195, 192, 100, .3);
+      border-color: rgba(195, 192, 100, 1);
+      color: rgba(195, 192, 100, 1);
+    }
+    .skills-diagram .skill-7 {
+      width: 7em;
+      height: 7em;
+      line-height: 7em;
+
+      background-color: rgba(214, 89, 102, .3);
+      border-color: rgba(214, 89, 102, 1);
+      color: rgba(214, 89, 102, 1);
+    }
+    .skills-diagram .skill-8 {
+      vertical-align: bottom;
+
+      width: 8em;
+      height: 8em;
+      line-height: 8em;
+      background-color: rgba(46, 138, 75, .3);
+      border-color: rgba(46, 138, 75, 1);
+      color: rgba(46, 138, 75, 1);
+    }
+    .skills-diagram .skill-9 {
+      width: 6em;
+      height: 6em;
+      line-height: 0.6em;
+
+      background-color: rgba(177, 18, 2, .3);
+      border-color: rgba(177, 18, 2, 1);
+      color: rgba(177, 18, 2, 1);
+    }
+    .skills-diagram .skill-10 {
+      width: 14em;
+      height: 14em;
+      line-height: 14em;
+      background-color: rgba(81, 112, 144, .3);
+      border-color: rgba(81, 112, 144, 1);
+      color: rgba(81, 112, 144, 1);
+    }
+
+  }
+
+
+}
+
 .contenedor{
   width: 100%;
   min-height: 100%;
   height: auto !important;
   position: fixed;
-  top:0; 
+  top:0;
   left:0;
   background: #000;
 .loader {

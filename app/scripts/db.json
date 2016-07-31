@@ -1,0 +1,31 @@
+{
+  "nodes": [
+    {"atom": "Frontend", "size": 32},
+    {"atom": "Backend", "size": 32},
+    {"atom": "Movil", "size": 32},
+    {"atom": "Javascript", "size": 35},
+    {"atom": "Html5", "size": 14},
+    {"atom": "Css3", "size": 14},
+    {"atom": "Sass", "size": 16},
+    {"atom": "Stylus", "size": 16},
+    {"atom": "ReactJS", "size": 26},
+    {"atom": "Angular", "size": 16},
+    {"atom": "Github", "size": 20},
+    {"atom": "PHP", "size": 10},
+    {"atom": "Laravel", "size": 26}
+  ],
+  "links": [
+    {"source": 0, "target": 1,  "bond": 1},
+    {"source": 1, "target": 2,  "bond": 1},
+    {"source": 1, "target": 3,  "bond": 1},
+    {"source": 2, "target": 5,  "bond": 2},
+    {"source": 2, "target": 6,  "bond": 1},
+    {"source": 1, "target": 4,  "bond": 1},
+    {"source": 3, "target": 10, "bond": 1},
+    {"source": 3, "target": 11, "bond": 1},
+    {"source": 0, "target": 7,  "bond": 1},
+    {"source": 0, "target": 8,  "bond": 1},
+    {"source": 0, "target": 9,  "bond": 1},
+    {"source": 0, "target": 12, "bond": 1}
+  ]
+}
